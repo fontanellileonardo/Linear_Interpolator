@@ -16,9 +16,12 @@ entity RC is
 end RC;	  
 
 architecture rtl of RC is
-
-	-- COMPONENT DECLARATION
-	component RCA is			 	-- RCA to sum signals
+	
+	-----------------------------
+    --  Component Declaration  --
+    -----------------------------
+	
+	component RCA is			 	-- net to sum signals
 		port (
 			a	:	in std_ulogic_vector(n-1 downto 0);
 			b	:	in std_ulogic_vector(n-1 downto 0);
@@ -27,8 +30,9 @@ architecture rtl of RC is
 			cout:	out std_ulogic
 		);
 	end component RCA;
-	
-	type array_of_string is array (0 to 3) of std_ulogic_vector(15 downto 0);	-- array of string type declaration
+
+	-- Declaration of the array of string type
+	type array_of_string is array (0 to 3) of std_ulogic_vector(15 downto 0);
 	
 	signal out_array	:	array_of_string;	-- to save the outputs of RCAs
 	signal yn1			:	array_of_string;
@@ -37,10 +41,11 @@ architecture rtl of RC is
 	-- signals to store shifted input
 	signal i1sh2		:	std_ulogic_vector(15 downto 0);	 	-- first input shifted by one position (divided by two)
 	signal i2sh2		:	std_ulogic_vector(15 downto 0);		-- second input shifted by one position
+
 	signal i1sh4		:	std_ulogic_vector(15 downto 0);		-- first input shifted by two positions (divided by four)
 	signal i2sh4		: 	std_ulogic_vector(15 downto 0);		-- second input shifted by two positions
 	
-	-- unuseful but necessary signals
+	-- signals for the rests 
 	signal s_cout		:	std_ulogic_vector(3 downto 0);		
 	signal s_cin, s_cout1, s_cout2	: 	std_ulogic := '0';
 	
@@ -74,7 +79,7 @@ architecture rtl of RC is
 		yn2(3) <= i2sh4;
 		SUM2 : RCA port map(i1sh4, i1sh2, s_cin, yn1(3), s_cout2);
 			
-		-- four Ripple Carry Adders to generate the four output signals
+		-- 4 Ripple Carry Adders to generate the four output signals
 		gen_RCA: 
 		for i in 0 to 3 generate
 			fin_sum : RCA port map(yn1(i), yn2(i), s_cin, out_array(i), s_cout(i));

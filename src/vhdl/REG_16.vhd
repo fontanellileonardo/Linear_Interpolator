@@ -2,6 +2,10 @@
 library IEEE;
 use IEEE.std_logic_1164.all;  
 
+-----------------------------
+--   Entity declaration    --
+-----------------------------
+
 entity REG_16 is 
 	generic (n : positive := 16); 
 	port ( 
@@ -11,6 +15,10 @@ entity REG_16 is
 		q_reg	: out std_ulogic_vector(n-1 downto 0)
 	);
 end REG_16;		
+
+-----------------------------
+-- Architecture definition --
+-----------------------------
 
 architecture str of REG_16 is
 
