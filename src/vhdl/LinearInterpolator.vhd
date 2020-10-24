@@ -43,7 +43,7 @@ architecture beh of LI is
     end component MUX;
     
     -- Combinatorial net that calculates the outputs.
-    -- The inputs are the the current point and the previous one.
+    -- The inputs are the current point and the previous one.
 	component RC is
 	port(
 		input	:	in std_ulogic_vector(n-1 downto 0); 
