@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="LI_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="LI_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="511999fs"></ZoomStartTime>
+      <ZoomEndTime time="512006fs"></ZoomEndTime>
+      <Cursor1Time time="512000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/LI_tb/s_input" type="array">
+      <obj_property name="ElementShortName">s_input[0:15][15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_input[0:15][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LI_tb/s_in" type="array">
+      <obj_property name="ElementShortName">s_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LI_tb/s_clk" type="logic">
+      <obj_property name="ElementShortName">s_clk</obj_property>
+      <obj_property name="ObjectShortName">s_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LI_tb/i" type="other">
+      <obj_property name="ElementShortName">i</obj_property>
+      <obj_property name="ObjectShortName">i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LI_tb/s_out" type="array">
+      <obj_property name="ElementShortName">s_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LI_tb/clk_p" type="other">
+      <obj_property name="ElementShortName">clk_p</obj_property>
+      <obj_property name="ObjectShortName">clk_p</obj_property>
+   </wvobject>
+</wave_config>
