@@ -4,7 +4,7 @@ This repository contains the files for the Elettronics Systems project
 
 ## Assignment
 Design a digital circuit that, given as input a sampled signal with a sampling period equal to T, gives as output an linearly interpolated version of the input signal. Use as interpolation factor L = 4 and a bit rappresentation of 16. 
-![Formula](/img/formula.png)
+![Formula](/images/formula.png)
 
 For further details of the assignment, the official document is [here](/docs/Assignment.pdf) (italian version)
 
