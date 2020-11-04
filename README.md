@@ -9,7 +9,7 @@ Design a digital circuit that, given as input a sampled signal with a sampling p
 For further details of the assignment, the official document is [here](/docs/Assignment.pdf) (italian version)
 
 ## Source Code
-The VHDL source code can be found [here](/src/vhdl).
+The VHDL source code can be found [here](/src/vhdl).\
 The Python script used for the validation of the net can be found [here](/src/python)
 
 ## Documentation
